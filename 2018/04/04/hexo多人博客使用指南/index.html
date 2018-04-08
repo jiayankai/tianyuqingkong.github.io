@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="本篇指南意在指导本团队开发者使用由hexo搭建的多人博客 面向阅读对象：专业开发者  github与ssh 基本环境搭建 如何写博客 如何上传文章或博客系统修改">
+<meta name="description" content="本篇指南意在指导本团队开发者使用由hexo搭建的多人博客 面向阅读对象：专业开发者  github与ssh 基本环境搭建 如何写博客 如何上传文章或博客系统修改 对博客系统进行修改(未完待续)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo 多人博客使用指南">
 <meta property="og:url" content="http://yoursite.com/2018/04/04/hexo多人博客使用指南/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="本篇指南意在指导本团队开发者使用由hexo搭建的多人博客 面向阅读对象：专业开发者  github与ssh 基本环境搭建 如何写博客 如何上传文章或博客系统修改">
+<meta property="og:description" content="本篇指南意在指导本团队开发者使用由hexo搭建的多人博客 面向阅读对象：专业开发者  github与ssh 基本环境搭建 如何写博客 如何上传文章或博客系统修改 对博客系统进行修改(未完待续)">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2018/04/04/hexo多人博客使用指南/base.png">
-<meta property="og:updated_time" content="2018-04-04T09:48:00.908Z">
+<meta property="og:updated_time" content="2018-04-08T03:45:45.345Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 多人博客使用指南">
-<meta name="twitter:description" content="本篇指南意在指导本团队开发者使用由hexo搭建的多人博客 面向阅读对象：专业开发者  github与ssh 基本环境搭建 如何写博客 如何上传文章或博客系统修改">
+<meta name="twitter:description" content="本篇指南意在指导本团队开发者使用由hexo搭建的多人博客 面向阅读对象：专业开发者  github与ssh 基本环境搭建 如何写博客 如何上传文章或博客系统修改 对博客系统进行修改(未完待续)">
 <meta name="twitter:image" content="http://yoursite.com/2018/04/04/hexo多人博客使用指南/base.png">
 
 
@@ -360,9 +360,13 @@
 <li><a href="#base">基本环境搭建</a></li>
 <li><a href="#write">如何写博客</a></li>
 <li><a href="#upload">如何上传文章或博客系统修改</a></li>
+<li><a href="#modifiy">对博客系统进行修改(未完待续)</a></li>
 </ol>
 <a id="more"></a>
-<h2 id="基本环境搭建"><a href="#基本环境搭建" class="headerlink" title="基本环境搭建"></a><span id="base">基本环境搭建</span></h2><ul>
+<h2 id="1-github与ssh"><a href="#1-github与ssh" class="headerlink" title="(1)github与ssh"></a><span id="github_ssh">(1)github与ssh</span></h2><ul>
+<li>先将ssh添加到github上避免每次上传文章时都要输入账号密码</li>
+</ul>
+<h2 id="2-基本环境搭建"><a href="#2-基本环境搭建" class="headerlink" title="(2)基本环境搭建"></a><span id="base">(2)基本环境搭建</span></h2><ul>
 <li><p>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:tianyuqingkong/tianyuqingkong.github.io.git localFileName (将源代码下载本地)</p>
 </li>
 <li><p>git checkout -b hexo origin/hexo (将分支切换到hexo分支)</p>
@@ -377,13 +381,13 @@
 </li>
 </ul>
 <p><img src="/2018/04/04/hexo多人博客使用指南/base.png" alt="base"></p>
-<h2 id="如何写博客"><a href="#如何写博客" class="headerlink" title="如何写博客"></a><span id="write">如何写博客</span></h2><ul>
+<h2 id="3-如何写博客"><a href="#3-如何写博客" class="headerlink" title="(3)如何写博客"></a><span id="write">(3)如何写博客</span></h2><ul>
 <li><p>写博客主要在source的_posts下面利用markdown写相应的文章，具体语法可以参考<a href="https://www.jianshu.com/p/b03a8d7b1719" target="_blank" rel="noopener">markdown语法</a></p>
 </li>
 <li><p>hexo写博客可以参照 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo文档</a>,这里面主要有三个命令<a href="https://hexo.io/zh-cn/docs/generating.html" target="_blank" rel="noopener">hexo generate</a>生成命令，<a href="https://hexo.io/zh-cn/docs/server.html" target="_blank" rel="noopener">hexo server</a>服务命令，<a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">hexo deploy</a>部署命令</p>
 </li>
 </ul>
-<h2 id="如何上传文章或博客系统修改"><a href="#如何上传文章或博客系统修改" class="headerlink" title="如何上传文章或博客系统修改"></a><span id="upload">如何上传文章或博客系统修改</span></h2><ul>
+<h2 id="4-如何上传文章或博客系统修改"><a href="#4-如何上传文章或博客系统修改" class="headerlink" title="(4)如何上传文章或博客系统修改"></a><span id="upload">(4)如何上传文章或博客系统修改</span></h2><ul>
 <li><p>hexo deploy (将静态文件提交到master)</p>
 </li>
 <li><p>git add .   git commit -m ‘修改’ git push origin hexo(将源文件同步到hexo分支:这里有点冗余最终可能会做成脚本命令)</p>
@@ -561,7 +565,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本环境搭建"><span class="nav-number">1.</span> <span class="nav-text">基本环境搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何写博客"><span class="nav-number">2.</span> <span class="nav-text">如何写博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何上传文章或博客系统修改"><span class="nav-number">3.</span> <span class="nav-text">如何上传文章或博客系统修改</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-github与ssh"><span class="nav-number">1.</span> <span class="nav-text">(1)github与ssh</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-基本环境搭建"><span class="nav-number">2.</span> <span class="nav-text">(2)基本环境搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-如何写博客"><span class="nav-number">3.</span> <span class="nav-text">(3)如何写博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-如何上传文章或博客系统修改"><span class="nav-number">4.</span> <span class="nav-text">(4)如何上传文章或博客系统修改</span></a></li></ol></div>
             
 
           </div>
